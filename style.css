@@ -1,0 +1,96 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+canvas { position : absolute; top : 0px; left : 0px; }
+div { 
+  position : absolute; 
+  top : 0px; 
+  left : 0px; 
+  font-family: 'junegull';
+}
+@font-face {
+  font-family: junegull;
+  src: url("/junegull.regular.ttf");
+}
+h1 {
+  font-family: junegull;
+  filter: drop-shadow(-1px -1px 0px #ffffff) drop-shadow(2px -1px 0px #888888) drop-shadow(2px 2px 0px #666666) drop-shadow(-1px 2px 0px #ffffff);
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+input[type="radio"] {
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Chrome, Safari, Opera */
+  transform: scale(2);
+}
+input[type="radio"]:last-child {
+  left: 10px;
+}
+
+.wrapper {
+    background: EEEEEE;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    text-align: center;
+    left: 0;
+    font-size: 100px;
+    font-family: junegull;
+    src: url("/junegull.regular.ttf");
+    color: 888888;
+    line-height: 100vh;
+}
+
+.dropzone {
+  width: 50%;
+  margin: 1%;
+  border: 2px dashed #8f0000 !important;
+  border-radius: 5px;
+}
+input[type="checkbox"].switch_1{
+    font-size: 30px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 64px;
+    height: 1.5em;
+    background: #ddd;
+    border-radius: 3em;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  
+  input[type="checkbox"].switch_1:checked{
+    background: #ff0000;
+  }
+  
+  input[type="checkbox"].switch_1:after{
+    position: absolute;
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-shadow: 0 0 .25em rgba(0,0,0,.3);
+            box-shadow: 0 0 .25em rgba(0,0,0,.3);
+    -webkit-transform: scale(.7);
+            transform: scale(.7);
+    left: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  
+  input[type="checkbox"].switch_1:checked:after{
+    left: calc(100% - 1.5em);
+  }
